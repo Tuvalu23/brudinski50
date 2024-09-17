@@ -7,6 +7,7 @@
 
 import random
 
+# a dictionary with SoftDev period as the key and list of students in the period and corresponding data
 krewes = {
            4: [ 
 		'DUA','TAWAB','EVA','JACK','VICTOR','EVAN','JASON','COLYI','IVAN','TANZEEM',
@@ -23,8 +24,10 @@ krewes = {
          }
 
 def gen_rand_student():
+    # generate random period
     rand_period = list(krewes.keys())[random.randint(0, len(krewes) - 1)]
+    # generate random depo
     rand_devo = krewes[rand_period][random.randint(0, len(krewes[rand_period]) - 1)]
     return rand_devo
-          
+
 print(gen_rand_student())
