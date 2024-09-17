@@ -23,7 +23,7 @@ for tup in tuples:
         period, devo, ducky = parts
         devos_list.append({'period': period, 'devo': devo, 'ducky': ducky})
 
-# Step 3: randomly select a devo from the list and print their details
+# randomly select a devo from the list and print their details
 if devos_list:
     random_devo = random.choice(devos_list)
     print(f"Devo: {random_devo['devo']}, Period: {random_devo['period']}, Ducky: {random_devo['ducky']}")
