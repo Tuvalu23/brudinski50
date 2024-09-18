@@ -9,8 +9,9 @@ time spent: 0.5 hr
 
 import random
 
-with open("krewes.txt", "r") as file:  # open the krewes text file and read its contents
-    content = file.read()
+file = open("krewes.txt", "r")  # open the krewes text file in read mode
+content = file.read()           # read the file's contents
+file.close()                    # close the file
 
 # split the content using '@@@' to separate each tuple
 tuples = content.split("@@@")
