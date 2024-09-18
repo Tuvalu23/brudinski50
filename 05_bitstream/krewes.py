@@ -4,7 +4,7 @@ Topher's Lovers
 SoftDev
 K05: File Parsing
 2024-09-17
-time spent:
+time spent: 0.5 hr
 '''
 
 import random
