@@ -1,4 +1,4 @@
-# Clyde 'Thluffy' Sinclair
+# Ben Rudinski
 # SoftDev
 # September 2024
 
@@ -14,3 +14,8 @@ def hello_world():
 if __name__ == "__main__":      # true if this file NOT imported
     app.debug = True            # enable auto-reload upon code change
     app.run()
+    
+# Differences:
+# - includes a common Python idiom: if __name__ == "__main__":. 
+# - ensures that the Flask app is only run if the script is executed directly, not when it is imported as a module in another script.
+# - If the script is imported into another file, the Flask app will not automatically run, which is a key structural improvement.

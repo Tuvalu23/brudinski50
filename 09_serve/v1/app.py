@@ -11,4 +11,5 @@ def hello_world():
 
 app.run()
 
-# We predicted this would create a website heading with the IP and return function which it did. It did the same thing as v0
+# Prediction:
+# The page will display "No hablo queso!". No additional outputs or debugging features are present.

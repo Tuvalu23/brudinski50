@@ -25,27 +25,32 @@ We set about this task by finding points of reference to understand what each fu
 '''
 
 
-from flask import Flask
+from flask import Flask  # importing the Flask class from the flask package
 
-app = Flask(__name__)                    # Q0: Where have you seen similar syntax in other langs?
+app = Flask(__name__)  # q0: where have you seen similar syntax in other langs?
 
-# The maih function in python has simillar synthax with if "__name__"
+# this syntax is similar to the main function construct in many languages, such as java and c++
+# the `__name__` variable in python is used to determine if the file is being run directly or imported.
 
-@app.route("/")                          # Q1: What points of reference do you have for meaning of '/'?
+@app.route("/")  # q1: what points of reference do you have for the meaning of '/'?
 
-#  Could be a file path, also I see an @ symbol so it could be ran in terminal. Perhaps its the route of a path or website/application
+# the `/` typically represents the root path of a web application, as it does in URLs. 
+# the `@` symbol is a decorator in python, which modifies the function that follows it. 
+# in this case, it sets up the routing for the home page of the web app.
 
 def hello_world():
-    print(__name__)                      # Q2: Where will this print to? Q3: What will it print?
+    print(__name__)  # q2: where will this print to? q3: what will it print?
 
- # It will print to the terminal/constole and it will print __main__
- 
-    return "No hablo queso!"             # Q4: Will this appear anywhere? How u know?
+    # this will print to the terminal/console when the function is triggered by a browser request.
+    # it will print "__main__" since the script is being executed directly.
 
-# It will enter in the browser when you enter the app route "/". This is because flask's routing system send the return value of the function as an HTTP request
+    return "No hablo queso!"  # q4: will this appear anywhere? how do you know?
 
-app.run()                                # Q5: Where have you seen similar constructs in other languages?
+    # this string will be displayed in the browser when someone accesses the "/" route.
+    # flask’s routing system sends the return value of the function as the HTTP response content.
 
-# This looks like common java functions or processing functions
+app.run()  # q5: where have you seen similar constructs in other languages?
 
+# similar constructs exist in java, where the `main` function serves as an entry point.
+# app.run() starts the flask development server, allowing the web app to handle requests.
 
