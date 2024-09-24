@@ -20,7 +20,8 @@ def occupation_reader(file_path):
             if len(row) == 2:  # check if we have exactly two elements (occupation, percentage)
                 occupation = row[0].strip()
                 percentage = float(row[1].strip())
-                occupations[occupation] = percentage
+                if occupation.lower() != "total":
+                    occupations[occupation] = percentage
     return occupations
 
 # function to randomly select an occupation weighted by percentages
