@@ -38,13 +38,14 @@ def show_occupations():
     selected_occupation = weighted_rand(occupations)
     
     # plain text response
-    response = "Roster:\nBen Rudinski\n\n"
-    response += f"Randomly Selected Occupation: {selected_occupation}\n\n"
-    response += "List of Occupations:\n"
+    response = "Roster:\nBen Rudinski<br>"
+    response += "<br>"
+    response += f"Randomly Selected Occupation: {selected_occupation}<br><br>"
+    response += "List of Occupations:<br>"
     
     # loop through the occupations and their percentages, adding each to the response
     for occupation, percentage in occupations.items():
-        response += f"{occupation}: {percentage}%\n"
+        response += f"{occupation}: {percentage}%<br>"
 
     return response
 
