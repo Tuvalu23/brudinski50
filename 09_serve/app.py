@@ -19,10 +19,11 @@ def occupation_reader(file_path):
         csv_reader = csv.reader(file)
         next(csv_reader)  
         for row in csv_reader:
-            if len(row) == 2:  
+            if len(row) == 2: 
                 occupation = row[0].strip()
                 percentage = float(row[1].strip())
-                occupations[occupation] = percentage
+                if occupation.lower() != "total":
+                    occupations[occupation] = percentage
     return occupations
 
 def weighted_rand(occupations):
@@ -38,7 +39,7 @@ def show_occupations():
     selected_occupation = weighted_rand(occupations)
     
     # plain text response
-    response = "Roster:\nBen Rudinski<br>"
+    response = "TNPG+Roster:\n Team Puppy Turtle Snake -- Ben Rudinski + Stella Yampolsky<br>"
     response += "<br>"
     response += f"Randomly Selected Occupation: {selected_occupation}<br><br>"
     response += "List of Occupations:<br>"
