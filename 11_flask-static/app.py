@@ -18,11 +18,12 @@ def hello_world():
 
 # If I uncomment what below nothing really changes, but that is because it is a different path. If we navigate to that path we should see something different!
 
-app.route("/static/foo.html")
-def h():
-    print("the __name__ of this module is... ")
-    print(__name__)
-    return str(random.random())
+# comment this out as its not needed
+# @app.route("/static/foo.html")
+# def h():
+#     print("the __name__ of this module is... ")
+#     print(__name__)
+#     return str(random.random())
 
 # Once I navigate to that path it says "Is this plaintext, though?"
 
