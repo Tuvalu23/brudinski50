@@ -1,4 +1,4 @@
-# Endrit Idrizi
+# Ben Rudinski
 # Minerals FC - Endrit, Ben, Vedant
 # SoftDev 
 # K13: CSV file parsing, flask, displaying to HTML as a table with links 
