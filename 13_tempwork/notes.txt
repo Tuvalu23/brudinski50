@@ -1,4 +1,9 @@
-# Flask app development
+# Ben Rudinski
+# Minerals FC - Endrit, Ben, Vedant
+# SoftDev 
+# K13: CSV file parsing, flask, displaying to HTML as a table with links 
+# 2024-10-1
+# Time Spent : 1.5 Hours 
 
 ## 1. Project Setup
 - flask is used to create a simple web application that serves an HTML page.
