@@ -1,3 +1,10 @@
+# Endrit Idrizi
+# Minerals FC - Endrit, Ben, Vedant
+# SoftDev 
+# K13: CSV file parsing, flask, displaying to HTML as a table with links 
+# 2024-10-1
+# Time Spent : 1.5 Hours 
+
 import random
 import csv
 from flask import Flask, render_template
