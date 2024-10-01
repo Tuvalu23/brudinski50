@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occupations</title>
+</head>
+<body>
+    <!-- TNPG+roster -->
+    <h1>{{ tnpg_roster }}</h1>
+
+    <!-- Random Occupation -->
+    <h2>Today's Job: {{ random_job }} </h2>
+    <p>Explore the career here: <a href="{{ occupations[random_job]['link'] }}">{{ occupations[random_job]['link'] }}</a></p>
+
+    <!-- Table of Occupations -->
+    <h2>Occupations</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Job</th>
+                <th>Percentage</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for job, data in occupations.items() %}
+            <tr>
+                <td>{{ job }}</td>
+                <td>{{ data.percentage }}%</td>
+                <td><a href="{{ data.link }}">Link</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

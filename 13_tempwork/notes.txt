@@ -1,0 +1,30 @@
+# Flask app development
+
+## 1. Project Setup
+- flask is used to create a simple web application that serves an HTML page.
+- occupation data is stored in a CSV file, which includes job classes, their percentage distribution, and helpful links for each occupation.
+- the app uses a Python dictionary to map each job to its percentage and link.
+- we used the template (`tablified.html`) to separate the Python and HTML code for efficiency.
+
+## 2. Code Decisions
+- the function `readfile()` was written to parse the CSV file into a dictionary where each job class is linked to both its percentage and the helpful resource URL.
+- the `sel()` function selects a random occupation based on weighted percentages using the `random.choices()` method.
+- in the `/wdywtbwygp` route, we pass the dictionary and the randomly selected job to the template, which is then used to generate the HTML page.
+
+## 3. Template Structure
+- the template (`tablified.html`) was designed to include:
+  - a title.
+  - a heading that includes the TNPG+roster.
+  - a randomly selected job with a link to explore the job.
+  - a table displaying all occupations, their percentages, and links.
+  
+## 4. egoless Programming Section
+- clean and collaborative code development.
+- reused and improved existing code for CSV parsing instead of starting from scratch.
+- maintained open communication within the team to discuss our coding styles and preferences.
+- docused on creating reusable, modular code that everyone on the team (even endrit) could understand and contribute to.
+
+# EGO Section:
+- we found it important to work as a team, recognizing that individual coding styles might differ, but the goal was to produce the cleanest, most understandable code.
+- we discussed egoless programming principles and ensured everyone had a chance to contribute.
+- each team member provided feedback to refine the code, and we reused elements where possible to save time.
