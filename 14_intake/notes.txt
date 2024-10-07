@@ -1,23 +1,25 @@
 < your heading here >
 
+Team Notes:
+- read through the entire codebase for understanding.
+- tested functionality of both routes ("/" and "/auth").
+- flask app works as expected when all lines are uncommented.
+- use request.args.get('username') to avoid KeyErrors in case 'username' is not provided.
+
 DISCO:
-* 
-* 
-* 
+* flask debugging mode is helpful for catching errors and auto-restarting the server.
+* using request.args.get() prevents issues with missing form data.
+* the testmod0.py module runs some print statements, confirming import success.
 -----------------------------------------------------------------------
 
 
 Q/C/C:
-* 
-* 
-* 
+* none at the moment.
 -----------------------------------------------------------------------
 
 
 OTHER?
-* 
-* 
-* 
+* plan first to avoid wasting time on unnecessary debugging.
 -----------------------------------------------------------------------
 
 
