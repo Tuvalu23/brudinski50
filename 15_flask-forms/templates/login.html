@@ -1,0 +1,29 @@
+<!--
+TNPG: Topher Forever
+Roster: Ben Rudinski, Claire Song, Tiffany Yang
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Welcome to the team: {{ team_name }}!</h1>
+    <h2>Roster: {{ roster | join(', ') }}</h2>
+
+    <form action="/submit" method='POST'>
+        <label for="username">Enter Your Name:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>Alternatively, you can submit with GET:</p>
+    <form action="/submit" method="GET">
+        <input type="text" name="username" placeholder="Your name">
+        <input type="submit" value="Submit with GET">
+    </form>
+</body>
+</html>

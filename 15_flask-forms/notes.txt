@@ -1,0 +1,14 @@
+# Flask Forms (K15: Take & Give)
+
+## Overview
+
+This app allows users to enter a username via an HTML form and submit it using either GET or POST methods. The app responds by displaying the input, the request method used, and an explanation of the differences between GET and POST in a Flask context.
+
+## Features:
+- Username input is echoed back to the user.
+- Explanation of GET vs POST methods.
+- Team name and roster displayed on both landing and response pages.
+
+## Team:
+- TNPG: Topher Forever
+- Roster: Ben Rudinski, Claire Song, Tiffany Yang
