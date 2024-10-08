@@ -1,4 +1,6 @@
-< your heading here >
+# Ben Rudinski
+# SoftDev
+# October 2024
 
 Team Notes:
 - read through the entire codebase for understanding.
