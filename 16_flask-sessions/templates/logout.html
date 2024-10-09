@@ -1,0 +1,20 @@
+<!--
+TNPG: Topher Alone
+Roster: Ben Rudinski
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+</head>
+<body>
+    <h1>You've been successfully logged out!</h1>
+    <h2>Team: {{ team_name }}</h2>
+    <h3>Roster: {{ roster | join(', ')}}</h3>
+
+    <a href="/">Login Again</a>
+</body>
+</html>
