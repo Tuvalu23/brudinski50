@@ -1,6 +1,6 @@
 '''
 Ben Rudinski
-Topher Forever
+Topher Alone
 SoftDev
 K16: Take and Keep
 2024-10-09
@@ -40,9 +40,7 @@ def welcome():
         and a session cookie is sent to your browser.
         """
         
-        return render_template('response.html', username=username, method=method_used, 
-                               greeting=greeting, explanation=explanation, 
-                               team_name=team_name, roster=roster)
+        return render_template('response.html', username=username, method=method_used, greeting=greeting, explanation=explanation, team_name=team_name, roster=roster)
     else:
         return redirect(url_for('index'))
 

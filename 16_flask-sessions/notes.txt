@@ -1,3 +1,11 @@
+'''
+Ben Rudinski
+Topher Alone
+SoftDev
+K16: Take and Keep
+2024-10-09
+time spent: 1 hr
+'''
 NOTES:
 - The Flask app now supports session management using Flask's built-in session mechanism.
 - Users remain logged in via sessions until they manually log out by clicking the "Logout" link.
