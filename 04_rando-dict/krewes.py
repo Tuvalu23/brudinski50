@@ -1,5 +1,5 @@
 # Ben Rudinski
-#<opher's Lovers
+# Topher's Lovers
 # SoftDev
 # K04 -- Random Students Generation from Dictionary
 # 2024-09-13
