@@ -1,10 +1,10 @@
 '''
 Ben Rudinski
-Topher Alone
+Topher Forever
 SoftDev
 K18: Styling a Flask App
 2024-10-15
-time spent: 1 hr
+time spent: 0.5
 '''
 from flask import Flask, render_template
 
