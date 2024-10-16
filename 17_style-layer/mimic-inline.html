@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foo Bar Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #282121; 
+            color: #000; 
+            overflow: hidden; /* hide sidebar */
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 150px); /
+        }
+        nav {
+            background-color: #ccc;
+            width: 25%; 
+            padding: 30px;
+            color: #000; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+            color: white;
+        }
+        nav h3 {
+            color: #000; 
+            margin-bottom: 20px; 
+                }
+        header {
+            background-color: #A3A19A; 
+            padding: 20px;
+            text-align: center;
+            color: white; 
+            width: 100%;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #ccc;
+            color: #000; 
+        }
+        footer {
+            background-color: #454141; 
+            color: #9c9797; 
+            text-align: right; 
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }        
+        h1 {
+            color: white;
+        }
+        h2 {
+            color: #000; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Foo Bar H One</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <h3>nav foo</h3> 
+            <ul>
+                <li>dis</li>
+                <li>dat</li>
+                <li>de udda ting</li>
+            </ul>
+        </nav>
+        <main>
+            <h2>main foo heading</h2>
+            <p>Jarlsberg mozzarella cheese and biscuits. Cheesecake smelly cheese cheese and wine cottage cheese cheese and biscuits gouda cheesy grin fromage frais. Lancashire babybel camembert de normandie lancashire smelly cheese paneer fromage cheddar. Cow stinking bishop mozzarella who moved my cheese stinking bishop mozzarella.
+
+                Cow mascarpone the big cheese. Cheese triangles airedale red leicester cheddar airedale mascarpone emmental bocconcini. The big cheese danish fontina babybel everyone loves macaroni cheese say cheese emmental cheese and wine. Melted cheese feta airedale melted cheese manchego blue castello cow feta. Squirty cheese pecorino.</p>
+        </main>
+    </div>
+    <footer>
+        <p>Copyright ©2024 Ben Rudinski</p>
+    </footer>
+</body>
+</html>
