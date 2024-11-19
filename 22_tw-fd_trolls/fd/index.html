@@ -10,7 +10,27 @@ Roster: Ben Rudinski + Nafiyu Murtaza
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" integrity="sha256-GXqXiPyGu4tLSLPafk8Afabg6ydNSNCBWK6ptdZ+cqk=" crossorigin="anonymous">
 </head>
 <style>
-<!-- To add of course -->
+    body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+    .roster-card {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background: burlywood;
+    }
+    footer {
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        background-color: #333;
+        color: white;
+    }
 </style>
 <body>
     <!-- Grid container layout -->
@@ -25,13 +45,41 @@ Roster: Ben Rudinski + Nafiyu Murtaza
     <div class="grid-container">
         <!-- content heading -->
         <h2> How are the various Topher's in NYC currently doing?</h2>
-        <!-- paragraff -->
-        <p> In New York City there are various Topher's who are currently frolicking and having an overall great time. 
-         The Topher's have been busy exploring the local pond, enjoying the crisp air of fall. They've been seen splashing
-            around and socializing with other Michael's and Endrit's. Their playful antics bring joy to everyone who passes by.
-        </p>
+        <!-- content cards -->
+         <div class="grid-x grid-margin-x small-up-1 medium-up-2">
+            <div class="cell">
+                <div class="roster-card">
+                    <h3>Topher Brown Mykolyk</h3>
+                    <p>Topher Brown is busy teaching eager minds. He recently completed grading assignments and is brainstorming new challenges for his students. Outside of work, he loves spending evenings reading philosophy at the park.</p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="roster-card">
+                    <h3>Topher Smith</h3>
+                    <p>Topher Smith is exploring the art scene in Brooklyn, attending exhibitions and connecting with fellow artists. Known for his unique paintings, he's preparing for his upcoming gallery showcase.</p>
+                </div>
+            </div>
+            <!-- Topher Lee -->
+            <div class="cell">
+                <div class="roster-card">
+                    <h3>Topher Lee</h3>
+                    <p>Topher Lee, a tech enthusiast, spends his days debugging code and nights hacking away at a new startup idea. Recently, he organized a hackathon in the Bronx that was a smashing success.</p>
+                </div>
+            </div>
+            <!-- Topher Johnson -->
+            <div class="cell">
+                <div class="roster-card">
+                    <h3>Topher Johnson</h3>
+                    <p>Topher Johnson, a culinary genius, has been experimenting with new recipes in his Manhattan kitchen. He dreams of opening his own restaurant soon, featuring his signature fusion dishes.</p>
+                </div>
+            </div>
+         </div>
     </div>
 
+    <!-- footer -->
+     <footer>
+        <p>© 2024 TopherEvilInc. All Rights Topherserved.</p>
+     </footer>
     
 </body>
 </html>
