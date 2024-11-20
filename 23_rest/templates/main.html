@@ -3,18 +3,83 @@
 TNPG: Topher API
 Roster: Ben Rudinski + Tiffany Yang
 -->
-<html lang="en>"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasa Page</title>
+    <title>Nasa Picture of the Day</title>
+    <style>
+        /* Very nice CSS */
+        body {
+            background-color: #0b3d91;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center; /* Fixed typo */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0b3d91;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            border: 5px solid #fff;
+            margin-top: 20px;
+        }
+        .explanation {
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+            line-height: 1.6;
+            background-color: #1a5276;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .team-info {
+            margin-top: 50px;
+            background-color: #154360;
+            padding: 20px;
+            border-top: 2px solid #fff;
+        }
+        .team-info h2, .team-info ul {
+            margin: 0;
+            padding: 0;
+        }
+        .team-info ul {
+            list-style-type: none;
+        }
+        .team-info li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-    }
-</style>
 <body>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+
+    {% if image_url %}
+        <img src="{{ image_url }}" alt="Nasa Picture of the Day">
+        <div class="explanation">
+            <p>{{ explanation }}</p>
+        </div>
+    {% else %}
+        <p>Oh no, the image couldn't be found!</p>
+    {% endif %}
+
+    <div class="team-info">
+        <h2>Team: {{ team_name }}</h2>
+        <p>Roster:</p>
+        <ul>
+            {% for member in roster %}
+                <li>{{ member }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>
