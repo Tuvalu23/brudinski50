@@ -25,5 +25,17 @@ At this stage, I prefer using Foundation because it simplifies responsive design
 ## TW Version
 
 ## DISCO
+- Tailwind allows you to use CSS inside HTML files, which really helps cutting down on the overall amount of code I have to code.
+- I learned how to use Tailwind's grid and flex utilities for responsive design.
+- I explored Tailwind's `shadow-lg`, `rounded-lg`, and `text-` classes for clean, modern UI styling.
 
 # QCC
+1. How do you balance utility classes with reusable components in Tailwind?
+2. When is it better to use Tailwind's prebuilt classes versus writing custom CSS?
+
+## q0
+1
+
+## q0b
+- [Tailwind Documentation](https://tailwindcss.com/docs/)
+- [MDN Web Docs](https://developer.mozilla.org/)

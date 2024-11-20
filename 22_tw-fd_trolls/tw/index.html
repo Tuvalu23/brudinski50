@@ -9,7 +9,47 @@ Roster: Ben Rudinski + Nafiyu Murtaza
         <title>TopherEvilInc - Tailwind Website</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
+    <style>
+        body {
+            background-color: #f8fafc;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
     <body>
-        <!-- Will do tmr -->
+        <body class="min-h-screen flex flex-col">
+            <!-- Header Section -->
+            <header class="bg-gray-800 text-white text-center py-4">
+                <h1 class="text-3xl font-bold">TopherEvilInc</h1>
+                <p>Authored by Ben Rudinski and Nafiyu Murtaza</p>
+            </header>
+    
+            <!-- Main Content -->
+            <main class="flex-grow container mx-auto py-6 px-4">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">How are the various Topher's in NYC currently doing?</h2>
+                <!-- Topher Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white shadow-lg rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-700">Topher Brown Mykolyk</h3>
+                        <p>Topher Brown is busy teaching eager minds. He recently completed grading assignments and is brainstorming new challenges for his students. Outside of work, he loves spending evenings reading philosophy at the park.</p>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-700">Topher Smith</h3>
+                        <p>Topher Smith is exploring the art scene in Brooklyn, attending exhibitions and connecting with fellow artists. Known for his unique paintings, he's preparing for his upcoming gallery showcase.</p>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-700">Topher Lee</h3>
+                        <p>Topher Lee, a tech enthusiast, spends his days debugging code and nights hacking away at a new startup idea. Recently, he organized a hackathon in the Bronx that was a smashing success.</p>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-700">Topher Johnson</h3>
+                        <p>Topher Johnson, a culinary genius, has been experimenting with new recipes in his Manhattan kitchen. He dreams of opening his own restaurant soon, featuring his signature fusion dishes.</p>
+                    </div>
+                </div>
+            </main>
+
+             <!-- Footer -->
+        <footer class="bg-gray-800 text-white text-center py-4">
+            <p>© 2024 TopherEvilInc. All Rights Topherserved.</p>
+        </footer>
     </body>
 </html>
