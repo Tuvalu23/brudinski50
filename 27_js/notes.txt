@@ -1,0 +1,17 @@
+Team Mini-JBEE :: Ben Rudinski, Endrit Idrizi
+SoftDev pd5
+K27 - Basic functions in JavaScript
+2025-01-06m
+
+DISCO:
+- Recursive functions in Scheme and JavaScript are the same structure-wise.
+- Maybe we could add diagnostic print statements to add further clarity.
+- Scheme uses `cond` for conditionals, while JavaScript uses `if-else`.
+
+QCC:
+- How efficient is the recursive fibonacci function for large inputs? It seems very slow.
+- How about the factorial function?? (this reminds be of big O notation)
+
+Notes:
+- ALWAYS ENSURE the developer console is open to run JS test calls.
+- You can copy and paste the test calls directly into the console if you want more verification.
