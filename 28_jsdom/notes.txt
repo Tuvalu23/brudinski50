@@ -1,0 +1,21 @@
+## K28: "Crash Test DOMmies"
+### Team HiManJellybeanPookieBear :: Vedant Kothari, Ben Rudinski
+### SoftDev pd5
+### 2025-01-07
+
+### DISCO
+   - DOM allows easy changes like adding or removing elements with functions: `document.createElement` and `appendChild`.
+   - Recursive functions might not work properly for large inputs without optimization.
+   - You can add HTML classes using `classList.add` without modifying the HTML or CSS directly.
+   - Creating a `window.onload` function allow simple initialization of the page state, such as populating elements with content (like our fib, fact, etc).
+   - console.log for debugging!!!
+
+### QCC
+   - How can we efficiently create Fibonacci sequences for large inputs without causing a stack overflow?
+   - Adding error handling in `removeItem` prevents runtime errors when an invalid index is provided.
+
+### PROTIPS
+Use `console.log` liberally to track variable states and logic flow.
+   - Use `console.dir` to view detailed properties of DOM elements.
+
+

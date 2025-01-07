@@ -114,15 +114,32 @@ function fact(n) {
     return n * fact(n - 1);
 }
 
-
 // GCD
+function gcd(a, b) {
+    if (b == 0) return a;
+    return gcd(b, a % b);
+}
 
+// test functiojs  on page load
+window.onload = function() {
+    var resultsList = document.getElementById("calc-results");
+
+    // now add each to list
+    var addResult = function(text) {
+        var resItm = document.createElement("li");
+        resItm.innerHTML = text;
+        resultsList.appendChild(resItm);
+    }
+
+    addResult("Fibonacci of 5: " + fib(5));
+    addResult("Factorial of 5: " + fact(5));
+    addResult("GCD of 48 and 18: " + gcd(48, 18));
+};
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
 const myFxn = (param1, param2) => {
-    // body
-    return retVal;
+    return param1 + param2;
 };
 
