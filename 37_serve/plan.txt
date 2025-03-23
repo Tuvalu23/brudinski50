@@ -1,0 +1,20 @@
+Plan to create domain:
+* Download Nginx and ensure correct firewall privilages (for HTTP)
+* Create foistapp located in /var/www/foistapp/
+* Configure foistapp located in /etc/nginx/sites-avaliable/foistapp
+* create a symlink between configuration and /etc/nginx/sites-enabled/
+* restart nginx using: sudo systemctl restart nginx
+
+Domain Plan:
+- We will NOT provision domain names.
+- We'll use IP addresses for all deployments.
+
+Deployment Steps (applied to each droplet):
+1. SSH into the droplet
+2. Install Python, pip, venv, and nginx
+3. Set up Flask app (`myfoistapp`)
+4. Test Flask with `python app.py`
+5. Set up Nginx as reverse proxy
+6. Restart Nginx and confirm the site loads
+7. Repeat for each team member
+8. Revisit each droplet and enable HTTPS with Certbot

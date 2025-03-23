@@ -1,0 +1,16 @@
+* In order to serve to outside world, you must adjust the firewall to allow at least Nginx HTTP
+* The html for your website should be located in /var/www/<domain_name>/
+* In addition to adding html, you should set up "server blocks." These include configuration details for your domain
+	* This should be located in /etc/nginx/sites-avaliable/<domain_name>
+	* For root, make sure that it contains the correct path to where your html file is located
+
+# Create and activate virtual environment
+mkdir myfoistapp && cd myfoistapp
+python3 -m venv venv
+source venv/bin/activate
+
+# Install Python packages
+pip install flask gunicorn
+
+# Create Flask app
+nano app.py
